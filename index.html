@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Pathfinding Visualizer</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h2>Pathfinding Visualizer</h2>
+
+<div class="controls">
+
+<button onclick="setStart()">Set Start</button>
+<button onclick="setEnd()">Set End</button>
+<button onclick="setWall()">Set Wall</button>
+
+<button onclick="runBFS()">Run BFS</button>
+<button onclick="runDijkstra()">Run Dijkstra</button>
+<button onclick="runAStar()">Run A*</button>
+<button onclick="runRace()">Algorithm Race</button>
+<label>Speed</label>
+<input type="range" id="speedSlider" min="5" max="100" value="20">
+<button onclick="generateMaze()">Generate Maze</button>
+<button onclick="toggleDarkMode()">Dark Mode</button>
+
+<button onclick="clearGrid()">Clear</button>
+
+</div>
+
+<div id="grid"></div>
+<div id="stats">
+
+<p>Algorithm : <span id="algoName">-</span></p>
+
+<p>Visited Nodes : <span id="visitedCount">0</span></p>
+
+<p>Path Length : <span id="pathLength">0</span></p>
+
+</div>
+<div id="raceResult">
+
+<p>BFS Time : <span id="bfsTime">-</span></p>
+
+<p>Dijkstra Time : <span id="dijTime">-</span></p>
+
+<p>A* Time : <span id="astarTime">-</span></p>
+
+<p><b>Winner : <span id="winner">-</span></b></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

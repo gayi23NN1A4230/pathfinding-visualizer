@@ -1,0 +1,73 @@
+body{
+font-family:Arial;
+text-align:center;
+}
+
+.controls{
+margin-bottom:20px;
+}
+
+#grid{
+display:grid;
+grid-template-columns:repeat(20,30px);
+justify-content:center;
+}
+
+.node{
+width:30px;
+height:30px;
+border:1px solid black;
+background:#a6c8d4;
+}
+
+.start{
+background:green;
+}
+
+.end{
+background:red;
+}
+
+.wall{
+background:black;
+}
+
+.visited{
+background:yellow;
+}
+
+.path{
+background:orange;
+}
+.weight{
+background: orange;
+}
+body.dark{
+background:#121212;
+color:white;
+}
+
+body.dark .node{
+border:1px solid #333;
+}
+
+body.dark .visited{
+background:#3a7bd5;
+}
+
+body.dark .path{
+background:#ffd166;
+}
+
+body.dark .wall{
+background:#555;
+}
+#stats{
+margin-top:20px;
+font-size:18px;
+font-weight:bold;
+}
+#raceResult{
+margin-top:20px;
+font-size:18px;
+}
