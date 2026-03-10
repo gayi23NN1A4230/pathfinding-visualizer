@@ -1,21 +1,12 @@
 # Pathfinding Visualizer
 
-This project visualizes pathfinding algorithms.
-
-Algorithms implemented:
+This project visualizes pathfinding algorithms like:
 - BFS
+- DFS
 - Dijkstra
 - A*
 
 Features:
-- Interactive grid
-- Walls
-- Weighted nodes
-- Maze generator
-- Dark mode
-- Algorithm race
-
-Technologies used:
-- HTML
-- CSS
-- JavaScript
+- Path Length Counter
+- Visited Nodes Counter
+- Algorithm Comparison
